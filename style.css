@@ -23,6 +23,25 @@ header a {
     text-decoration: none;
 }
 
+/* --- New Navigation Bar Styles --- */
+nav {
+    background-color: #444;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+/* ---------------------------------- */
+
 main {
     padding: 20px;
     max-width: 800px;
