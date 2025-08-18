@@ -23,7 +23,6 @@ header a {
     text-decoration: none;
 }
 
-/* --- New Navigation Bar Styles --- */
 nav {
     background-color: #444;
     text-align: center;
@@ -40,7 +39,6 @@ nav a {
 nav a:hover {
     background-color: #555;
 }
-/* ---------------------------------- */
 
 main {
     padding: 20px;
@@ -74,3 +72,22 @@ footer {
     background: #333;
     color: #fff;
 }
+
+/* === NEW STYLES ADDED HERE === */
+
+/* 1. Banner Image Style */
+.banner img {
+    width: 100%; /* Make image span the full width of the page */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any extra space below the image */
+}
+
+/* 2. Scrollable News Section Style */
+#news ul {
+    max-height: 150px; /* Set a maximum height for the news list */
+    overflow-y: auto; /* Add a vertical scrollbar only when needed */
+    border: 1px solid #ddd; /* Optional: adds a light border */
+    padding: 10px;
+}
+
+/* ============================ */
