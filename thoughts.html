@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shi Gu - Research</title>
+    <title>Shi Gu - Shares</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -21,16 +21,73 @@
         </nav>
     </header>
 
-    <main>
-        <section id="thoughts">
-            <h2>Thoughts</h2>
-            <p>This is where you can share your thoughts, blog posts, or other reflections.</p>
-        </section>
+    <main class="container">
+        <header>
+            <h1>Shares</h1>
+            <p>A collection of my talks, articles, and thoughts on technology and design.</p>
+        </header>
+
+        <nav class="filter-tabs">
+            <button class="tab-btn active" data-filter="all">All</button>
+            <button class="tab-btn" data-filter="talk">Talks</button>
+            <button class="tab-btn" data-filter="blog">Blogs</button>
+        </nav>
+
+        <div class="content-grid">
+            <div class="card" data-type="blog">
+                <img src="assets/no1.png" alt="Blog Post Image">
+                <div class="card-content">
+                    <span class="card-tag">Case Study</span>
+                    <h3>Designing a Better User Experience</h3>
+                    <p class="card-excerpt">An in-depth look at the redesign process for a modern web application, focusing on user feedback.</p>
+                    <a href="shares/blog1.html" class="card-cta">Read More →</a>
+                </div>
+            </div>
+
+            <div class="card" data-type="talk">
+                 <div class="card-image-container">
+                    <img src="assets/no2.png" alt="Talk Thumbnail">
+                    <div class="play-icon">▶</div>
+                </div>
+                <div class="card-content">
+                    <span class="card-tag event">Web Summit 2024</span>
+                    <h3>The Future of Frontend Frameworks</h3>
+                    <p class="card-meta">A 30-minute talk on emerging trends and what's next for developers.</p>
+                    <a href="shares/blog1.html" class="card-cta">Watch Now →</a>
+                </div>
+            </div>
+            
+            <div class="card" data-type="blog">
+                <img src="assets/no3.png" alt="Blog Post Image">
+                <div class="card-content">
+                    <span class="card-tag">Productivity</span>
+                    <h3>My Top 5 Tools for Remote Work</h3>
+                    <p class="card-excerpt">Discover the apps and workflows that keep my team efficient and connected across timezones.</p>
+                    <a href="#" class="card-cta">Read More →</a>
+                </div>
+            </div>
+
+            <div class="card" data-type="talk">
+                 <div class="card-image-container">
+                    <img src="assets/no4.png" alt="Talk Thumbnail">
+                    <div class="play-icon">▶</div>
+                </div>
+                <div class="card-content">
+                    <span class="card-tag event">DevConf 2025</span>
+                    <h3>State Management in Large Apps</h3>
+                    <p class="card-meta">Deep dive into patterns for managing complex application state.</p>
+                    <a href="#" class="card-cta">Watch Now →</a>
+                </div>
+            </div>
+            
+        </div>
     </main>
 
     <footer>
         <p>&copy; 2025 Shi Gu. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
