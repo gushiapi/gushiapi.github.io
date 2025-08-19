@@ -121,7 +121,7 @@ main {
     padding: 0;
     margin: 0;
     border: none; /* Remove the box border */
-    max-height: 200px; /* Optional: adjust scroll height */
+    max-height: 250px; /* Optional: adjust scroll height */
     overflow-y: auto;
 }
 
