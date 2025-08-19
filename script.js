@@ -1,8 +1,9 @@
 function showTab(tabId) {
-    // Hide all tab panels
+    // Hide all tab panels and remove active class
     const tabPanels = document.querySelectorAll('.tab-panel');
     tabPanels.forEach(panel => {
         panel.classList.remove('active');
+        panel.style.display = 'none';
     });
 
     // Deactivate all tab buttons
@@ -15,6 +16,7 @@ function showTab(tabId) {
     const selectedPanel = document.getElementById(tabId);
     if (selectedPanel) {
         selectedPanel.classList.add('active');
+        selectedPanel.style.display = 'block';
     }
 
     // Activate the clicked button
@@ -24,7 +26,7 @@ function showTab(tabId) {
     }
 }
 
-// Ensure the first tab is shown by default
+// Ensure the 'plasticity' tab is shown by default
 document.addEventListener('DOMContentLoaded', () => {
-    showTab('simulator');
+    showTab('plasticity');
 });

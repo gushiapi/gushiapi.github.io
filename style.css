@@ -155,11 +155,19 @@ footer {
 
 .tab-buttons {
     display: flex;
-    margin-top: 20px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
     border-bottom: 2px solid #eee;
+    flex-wrap: nowrap;
+    width: 100%;
+    max-width: 700px;
+    gap: 20px;
 }
 
 .tab-button {
+    flex: 1;
     padding: 10px 20px;
     border: none;
     background-color: transparent;
@@ -167,7 +175,9 @@ footer {
     font-size: 1em;
     color: #666;
     border-bottom: 3px solid transparent;
-    margin-bottom: -2px; /* Align with container's bottom border */
+    margin-bottom: -2px;
+    text-align: center;
+    white-space: nowrap;
 }
 
 .tab-button:hover {
@@ -184,6 +194,10 @@ footer {
     display: none; /* Hide all panels by default */
     padding: 20px 0;
     border-top: 1px solid #eee;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .tab-panel.active {
