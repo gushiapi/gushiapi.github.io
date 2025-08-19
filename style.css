@@ -3,18 +3,18 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    /* 1. Changed background from gray to white */
+    background-color: #fff;
 }
 
-/* === BANNER STYLES === */
+/* === BANNER STYLES (FOR INDEX PAGE) === */
 .banner {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/background.png');
     background-size: cover;
     background-position: center;
     color: white;
     text-align: center;
-    padding: 40px 20px 20px 20px; /* Adjust padding to look good */
-    box-sizing: border-box;
+    padding: 30px 20px;
 }
 
 .banner .profile-picture {
@@ -39,79 +39,48 @@ body {
 
 .banner .social-icons {
     margin-top: 20px;
-    margin-bottom: 20px; /* Add space between icons and nav */
 }
 
-.banner .social-icons a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-    font-size: 1.8em;
+.banner .social-icons a svg {
+    height: 1.8em;
+    width: auto;
+    vertical-align: middle;
+    fill: white;
 }
 
 
-/* === NAVIGATION BAR STYLES (INSIDE BANNER) === */
-.banner nav {
-    margin-top: 20px; /* Space above the nav links */
+/* === STANDALONE NAV BAR (FOR INDEX PAGE) === */
+nav.main-nav {
+    background-color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: center;
 }
 
-.banner nav a {
-    color: white;
+nav.main-nav a {
+    color: #333;
     text-decoration: none;
     padding: 10px 20px;
     display: inline-block;
     font-size: 1.2em;
-    border-radius: 5px; /* Optional: adds rounded corners */
 }
 
-.banner nav a:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Subtle highlight on hover */
-}
-
-/* Styling for the new SVG icons */
-.banner .social-icons a svg {
-    height: 1.5em; /* Controls the size of the icon */
-    width: auto;
-    vertical-align: middle; /* Helps with alignment */
-}
-
-/* === MAIN CONTENT AREA === */
-main {
-    max-width: 800px;
-    margin: 20px auto; /* Center the content with space on top/bottom */
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+nav.main-nav a:hover {
+    background-color: #f8f8f8;
+    color: #007BFF;
 }
 
 
-/* === MISC STYLES === */
-#news ul {
-    list-style-type: disc;
-    padding-left: 30px;
-    max-height: 150px;
-    overflow-y: auto;
-    border: 1px solid #ddd;
-    padding: 10px;
-    padding-left: 30px; /* Keep space for bullets */
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #333;
-    color: #fff;
-}
-
-/* === NEW STYLES FOR LIGHT HEADER ON SECONDARY PAGES === */
-
+/* === LIGHT HEADER (FOR OTHER PAGES) === */
 .light-header {
-    background-color: #1a1a1a; /* Dark background */
+    background-color: #1a1a1a;
     color: white;
     padding: 10px 40px;
     display: flex;
-    justify-content: space-between; /* Pushes items to opposite ends */
-    align-items: center; /* Vertically aligns items */
+    justify-content: space-between;
+    align-items: center;
 }
 
 .light-header .lab-name {
@@ -125,12 +94,118 @@ footer {
 }
 
 .light-header nav a {
-    color: #ccc; /* Slightly dimmer color for nav links */
+    color: #ccc;
     text-decoration: none;
     padding: 10px 15px;
     font-size: 1.1em;
 }
 
 .light-header nav a:hover {
-    color: white; /* Brighten on hover */
+    color: white;
+}
+
+
+/* === GENERAL CONTENT STYLES === */
+main {
+    max-width: 800px;
+    margin: 0px auto;
+    background-color: #fff;
+    padding: 10px;
+    /* 2. Removed the box-shadow to eliminate the frame effect */
+    box-shadow: none;
+}
+
+/* === UPDATED NEWS SECTION STYLE === */
+#news ul {
+    list-style: none; /* Remove default bullets */
+    padding: 0;
+    margin: 0;
+    border: none; /* Remove the box border */
+    max-height: 200px; /* Optional: adjust scroll height */
+    overflow-y: auto;
+}
+
+#news li {
+    padding: 12px 0;
+    border-bottom: 1px solid #eee; /* Clean separator line */
+    display: flex;
+    align-items: center;
+}
+
+/* Add a decorative icon before each news item */
+#news li::before {
+    content: '◈'; /* You can use any emoji or character */
+    margin-right: 15px;
+    font-size: 0.8em;
+}
+
+/* Style the last item without a bottom border */
+#news li:last-child {
+    border-bottom: none;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    margin-top: 20px;
+}
+/* === NEW STYLES FOR RESEARCH PAGE TABS === */
+
+.tab-buttons {
+    display: flex;
+    margin-top: 20px;
+    border-bottom: 2px solid #eee;
+}
+
+.tab-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 1em;
+    color: #666;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -2px; /* Align with container's bottom border */
+}
+
+.tab-button:hover {
+    color: #007BFF;
+}
+
+.tab-button.active {
+    color: #333;
+    font-weight: bold;
+    border-bottom: 3px solid #007BFF;
+}
+
+.tab-panel {
+    display: none; /* Hide all panels by default */
+    padding: 20px 0;
+    border-top: 1px solid #eee;
+}
+
+.tab-panel.active {
+    display: block; /* Show only the active panel */
+}
+
+.research-columns {
+    display: flex;
+    gap: 20px; /* Space between columns */
+    margin-top: 20px;
+}
+
+.column {
+    flex: 1; /* Each column takes up equal space */
+    text-align: center;
+    border: 1px solid #eee;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.column img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
 }

@@ -24,13 +24,55 @@
     <main>
         <section id="research">
             <h2>Research Summary</h2>
-            <p>I like advancing spatial agents and solving fundamental research problems...</p>
+            <p>I like advancing spatial agents and solving fundamental research problems that arise from important challenges...</p>
+            
+            <div class="tab-buttons">
+                <button class="tab-button active" onclick="showTab('simulator')">Closed-Loop Simulator</button>
+                <button class="tab-button" onclick="showTab('foundation')">Spatial Agent Foundation</button>
+                <button class="tab-button" onclick="showTab('video')">Volumetric Video</button>
+            </div>
+
+            <div class="tab-content">
+                <div id="simulator" class="tab-panel active">
+                    <h3>Goal: Closed-Loop Simulators for Training Spatial Agents</h3>
+                    <div class="research-columns">
+                        <div class="column">
+                            <h4>Closed-Loop Simulator</h4>
+                            <p>Investigating 3D perception, 3D reconstruction, and generative AI to build a closed-loop simulator.</p>
+                            <img src="assets/simulator-image.jpg" alt="Simulator">
+                        </div>
+                        <div class="column">
+                            <h4>Model Training</h4>
+                            <p>Developing imitation learning and reinforcement learning algorithms to learn robust spatial agents.</p>
+                            <img src="assets/training-image.jpg" alt="Model Training">
+                        </div>
+                        <div class="column">
+                            <h4>Spatial Agent</h4>
+                            <p>Designing brains of spatial agents to achieve various tasks, such as driving and manipulation.</p>
+                            <img src="assets/agent-image.jpg" alt="Spatial Agent">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="foundation" class="tab-panel">
+                    <h3>Goal: Building a Foundation for Spatial Agents</h3>
+                    <p>Content for the Spatial Agent Foundation tab goes here...</p>
+                </div>
+
+                <div id="video" class="tab-panel">
+                    <h3>Goal: Advancing Volumetric Video Technology</h3>
+                    <p>Content for the Volumetric Video tab goes here...</p>
+                </div>
+            </div>
+
         </section>
     </main>
 
     <footer>
         <p>&copy; 2025 Shi Gu. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
