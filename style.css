@@ -48,7 +48,10 @@ body {
     fill: white;
 }
 
-
+.banner .social-icons a {
+    display: inline-block;
+    margin: 0 12px; /* Adds horizontal space between icons */
+}
 /* === STANDALONE NAV BAR (FOR INDEX PAGE) === */
 nav.main-nav {
     background-color: #fff;
