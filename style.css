@@ -3,7 +3,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #fff; /* White background for content area */
+    background-color: #f4f4f4;
 }
 
 /* === BANNER STYLES === */
@@ -13,7 +13,8 @@ body {
     background-position: center;
     color: white;
     text-align: center;
-    padding: 40px 20px 60px 20px; /* Increased bottom padding for nav overlap */
+    padding: 40px 20px 20px 20px; /* Adjust padding to look good */
+    box-sizing: border-box;
 }
 
 .banner .profile-picture {
@@ -38,6 +39,7 @@ body {
 
 .banner .social-icons {
     margin-top: 20px;
+    margin-bottom: 20px; /* Add space between icons and nav */
 }
 
 .banner .social-icons a {
@@ -48,61 +50,44 @@ body {
 }
 
 
-/* === NAVIGATION BAR STYLES === */
-nav {
-    background-color: #fff;
-    text-align: center;
-    padding: 15px 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    position: relative;
-    z-index: 100;
+/* === NAVIGATION BAR STYLES (INSIDE BANNER) === */
+.banner nav {
+    margin-top: 20px; /* Space above the nav links */
 }
 
-nav a {
-    color: #333; /* Dark text for contrast on white bg */
+.banner nav a {
+    color: white;
     text-decoration: none;
     padding: 10px 20px;
     display: inline-block;
     font-size: 1.2em;
+    border-radius: 5px; /* Optional: adds rounded corners */
 }
 
-nav a:hover {
-    color: #007BFF; /* A highlight color on hover */
+.banner nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Subtle highlight on hover */
 }
 
 
-/* === MAIN CONTENT WRAPPER === */
-.main-content {
+/* === MAIN CONTENT AREA === */
+main {
     max-width: 800px;
-    /* KEY: Changed negative top margin (-50px) to 0 */
-    margin: 0 auto;
+    margin: 20px auto; /* Center the content with space on top/bottom */
     background-color: #fff;
     padding: 20px;
-    position: relative;
-    z-index: 50;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 
 /* === MISC STYLES === */
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-/* === UPDATED NEWS SECTION STYLE === */
 #news ul {
+    list-style-type: disc;
+    padding-left: 30px;
     max-height: 150px;
     overflow-y: auto;
     border: 1px solid #ddd;
     padding: 10px;
-    
-    /* 1. Bring back the bullet points */
-    list-style-type: disc; 
-    
-    /* 2. Add padding to the left to make space for the bullets */
-    padding-left: 30px; 
+    padding-left: 30px; /* Keep space for bullets */
 }
 
 footer {
@@ -110,5 +95,4 @@ footer {
     padding: 20px;
     background: #333;
     color: #fff;
-    margin-top: 20px;
 }
