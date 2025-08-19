@@ -226,3 +226,18 @@ footer {
     height: auto;
     margin-top: 10px;
 }
+
+/* === NEW STYLES FOR CONTENT LINKS === */
+
+/* Style for links within the main content area */
+main a {
+    color: #007BFF; /* A standard, vibrant blue */
+    text-decoration: none; /* Removes the default underline */
+    transition: color 0.2s ease; /* Adds a smooth color change effect */
+}
+
+/* Style for when you move the mouse over the link */
+main a:hover {
+    color: #FFC107; /* A bright, vibrant yellow */
+    text-decoration: none; /* Adds an underline on hover for clarity */
+}
