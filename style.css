@@ -68,6 +68,12 @@ body {
     background-color: rgba(255, 255, 255, 0.2); /* Subtle highlight on hover */
 }
 
+/* Styling for the new SVG icons */
+.banner .social-icons a svg {
+    height: 1.5em; /* Controls the size of the icon */
+    width: auto;
+    vertical-align: middle; /* Helps with alignment */
+}
 
 /* === MAIN CONTENT AREA === */
 main {
@@ -95,4 +101,36 @@ footer {
     padding: 20px;
     background: #333;
     color: #fff;
+}
+
+/* === NEW STYLES FOR LIGHT HEADER ON SECONDARY PAGES === */
+
+.light-header {
+    background-color: #1a1a1a; /* Dark background */
+    color: white;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between; /* Pushes items to opposite ends */
+    align-items: center; /* Vertically aligns items */
+}
+
+.light-header .lab-name {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.light-header .lab-name a {
+    color: white;
+    text-decoration: none;
+}
+
+.light-header nav a {
+    color: #ccc; /* Slightly dimmer color for nav links */
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 1.1em;
+}
+
+.light-header nav a:hover {
+    color: white; /* Brighten on hover */
 }
