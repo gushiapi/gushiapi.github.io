@@ -295,10 +295,18 @@ main a:hover {
     color: #000;
 }
 
-.tab-btn.active {
+/* This targets ONLY the filter buttons on the Shares page */
+.filter-tabs .tab-btn.active {
     background-color: #007bff;
     color: #fff;
     border-color: #007bff;
+}
+
+/* This targets ONLY the navigation tabs on the Research page */
+.tab-buttons .tab-button.active {
+    color: #333;
+    font-weight: bold;
+    border-bottom: 3px solid #007BFF;
 }
 
 .content-grid {
@@ -317,13 +325,7 @@ main a:hover {
 }
 
 .card.hidden {
-    transform: scale(0.95);
-    opacity: 0;
-    pointer-events: none;
-    height: 0;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+    display: none;
 }
 
 .card:hover {
