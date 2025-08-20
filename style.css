@@ -134,7 +134,7 @@ main:not(.container) {
 
 #news li {
     padding: 12px 0;
-    border-bottom: 1px solid #eee; /* Clean separator line */
+    border-bottom: 0px solid #eee; /* Clean separator line */
     display: flex;
     align-items: center;
 }

@@ -25,7 +25,7 @@ function showTab(tabId) {
 
 // This runs after the entire page has loaded
 document.addEventListener('DOMContentLoaded', () => {
-    // --- Logic for the Shares page (thoughts.html) ---
+    // --- Logic for the Shares page (shares.html) ---
     const filterTabs = document.querySelectorAll('.tab-btn');
     const cards = document.querySelectorAll('.card');
     
