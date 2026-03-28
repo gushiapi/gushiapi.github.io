@@ -108,6 +108,12 @@ nav.main-nav a:hover {
     color: white;
 }
 
+.light-header nav a.active {
+    color: white;
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 8px;
+}
+
 
 /* === GENERAL CONTENT STYLES === */
 main {
@@ -401,4 +407,43 @@ main a:hover {
     line-height: 70px;
     pointer-events: none;
     backdrop-filter: blur(3px);
+}
+
+/* === TEAM PAGE STYLES === */
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.team-card {
+    text-align: center;
+}
+
+.team-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #eee;
+    transition: border-color 0.2s ease;
+}
+
+.team-card:hover img {
+    border-color: #007BFF;
+}
+
+.team-info h4 {
+    margin: 10px 0 4px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.team-info p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #666;
 }

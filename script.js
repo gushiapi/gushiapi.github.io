@@ -25,6 +25,12 @@ function showTab(tabId) {
 
 // This runs after the entire page has loaded
 document.addEventListener('DOMContentLoaded', () => {
+    // --- Update footer year ---
+    const yearSpan = document.querySelector('.current-year');
+    if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+    }
+
     // --- Logic for the Shares page (shares.html) ---
     const filterTabs = document.querySelectorAll('.tab-btn');
     const cards = document.querySelectorAll('.card');
