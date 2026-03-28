@@ -217,6 +217,11 @@ footer {
     display: block; /* Show only the active panel */
 }
 
+.tab-image {
+    width: 100%;
+    height: auto;
+}
+
 .research-columns {
     display: flex;
     gap: 20px; /* Space between columns */

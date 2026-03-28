@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-Academic personal website for Shi Gu (Associate Professor, Zhejiang University, Brain and Intelligence Lab). Hosted on GitHub Pages at https://gushiapi.github.io/.
+Academic personal website for Shi Gu (Associate Professor, Zhejiang University, Brain and Intelligence Lab). Hosted on GitHub Pages at https://guslab.org/.
 
 ## Tech Stack
 

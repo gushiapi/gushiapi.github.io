@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://gushiapi.github.io/</loc>
+    <loc>https://guslab.org/</loc>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://gushiapi.github.io/research.html</loc>
+    <loc>https://guslab.org/research.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gushiapi.github.io/publications.html</loc>
+    <loc>https://guslab.org/publications.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gushiapi.github.io/team.html</loc>
+    <loc>https://guslab.org/team.html</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://gushiapi.github.io/shares.html</loc>
+    <loc>https://guslab.org/shares.html</loc>
     <priority>0.7</priority>
   </url>
 </urlset>

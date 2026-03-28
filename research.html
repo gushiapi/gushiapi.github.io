@@ -6,10 +6,11 @@
     <meta name="description" content="Research at the Brain and Intelligence Lab: brain-inspired learning through plasticity, alignment intelligence, and closed-loop neurofeedback systems.">
     <meta property="og:title" content="Shi Gu - Research">
     <meta property="og:description" content="Research at the Brain and Intelligence Lab: brain-inspired learning through plasticity, alignment intelligence, and closed-loop neurofeedback systems.">
-    <meta property="og:image" content="https://gushiapi.github.io/assets/avatar.jpg">
-    <meta property="og:url" content="https://gushiapi.github.io/research.html">
+    <meta property="og:image" content="https://guslab.org/assets/avatar.jpg">
+    <meta property="og:url" content="https://guslab.org/research.html">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary">
+    <link rel="canonical" href="https://guslab.org/research.html">
     <title>Shi Gu - Research</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="assets/icon.png">
@@ -43,25 +44,25 @@
                 <strong>Goal 3: Construct real-time, closed-loop neurofeedback systems for precise neural stimulation.</strong>
             </p>
            
-            <div class="tab-buttons">
-                <button class="tab-button active" onclick="showTab('plasticity')">Learning & Plasticity</button>
-                <button class="tab-button" onclick="showTab('alignment')">Alignment & Intelligence</button>
-                <button class="tab-button" onclick="showTab('Neurofeedback')">Closed-loop & Neurofeedback</button>
+            <div class="tab-buttons" role="tablist">
+                <button class="tab-button active" role="tab" aria-selected="true" aria-controls="plasticity" onclick="showTab('plasticity')">Learning & Plasticity</button>
+                <button class="tab-button" role="tab" aria-selected="false" aria-controls="alignment" onclick="showTab('alignment')">Alignment & Intelligence</button>
+                <button class="tab-button" role="tab" aria-selected="false" aria-controls="Neurofeedback" onclick="showTab('Neurofeedback')">Closed-loop & Neurofeedback</button>
             </div>
 
             <div class="tab-content">
 
-                <div id="plasticity" class="tab-panel active">
-                    <img src="assets/goal_1.png" alt="Brain Plasticity" class="tab-image" style="width: 100%; height: auto;">
+                <div id="plasticity" class="tab-panel active" role="tabpanel">
+                    <img src="assets/goal_1.png" alt="Diagram illustrating brain plasticity and learning algorithms" class="tab-image">
                     <p>We aim to develop a system that can learn and adapt in a way that is similar to how the human brain learns. This involves creating models that can change and adapt based on new information, allowing the system to improve its performance over time.</p>
                 </div>
 
-                <div id="alignment" class="tab-panel" style="display:none;">
-                    <img src="assets/goal_2.png" alt="Intelligence Alignment" class="tab-image" style="width: 100%; height: auto;">
+                <div id="alignment" class="tab-panel" role="tabpanel">
+                    <img src="assets/goal_2.png" alt="Diagram illustrating alignment between AI and human intelligence" class="tab-image">
                     <p>We aim to create a system that can align its goals and actions with those of the human brain. This involves understanding the cognitive processes of the brain and developing models that can mimic these processes, allowing the system to work in harmony with human intelligence.</p>
                 </div>
-                <div id="Neurofeedback" class="tab-panel" style="display:none;">
-                    <img src="assets/goal_3.png" alt="Closed-loop Neurofeedback" class="tab-image" style="width: 100%; height: auto;">
+                <div id="Neurofeedback" class="tab-panel" role="tabpanel">
+                    <img src="assets/goal_3.png" alt="Diagram illustrating closed-loop neurofeedback systems" class="tab-image">
                     <p>We aim to develop a closed-loop neurofeedback interface that allows for real-time interaction between the system and the human brain. This involves creating models that can process and respond to brain signals, enabling a dynamic and adaptive interaction that enhances learning and performance.</p>
                 </div>
 

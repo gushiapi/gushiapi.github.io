@@ -3,23 +3,23 @@ function showTab(tabId) {
     const tabPanels = document.querySelectorAll('.tab-panel');
     tabPanels.forEach(panel => {
         panel.classList.remove('active');
-        panel.style.display = 'none';
     });
 
     const tabButtons = document.querySelectorAll('.tab-button');
     tabButtons.forEach(button => {
         button.classList.remove('active');
+        button.setAttribute('aria-selected', 'false');
     });
 
     const selectedPanel = document.getElementById(tabId);
     if (selectedPanel) {
         selectedPanel.classList.add('active');
-        selectedPanel.style.display = 'block';
     }
 
     const selectedButton = document.querySelector(`.tab-button[onclick="showTab('${tabId}')"]`);
     if (selectedButton) {
         selectedButton.classList.add('active');
+        selectedButton.setAttribute('aria-selected', 'true');
     }
 }
 
