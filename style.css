@@ -139,16 +139,17 @@ main:not(.container) {
 }
 
 #news li {
-    padding: 12px 0;
+    position: relative;
+    padding: 12px 0 12px 25px;
     border-bottom: 0px solid #eee; /* Clean separator line */
-    display: flex;
-    align-items: center;
 }
 
 /* Add a decorative icon before each news item */
 #news li::before {
     content: '◈'; /* You can use any emoji or character */
-    margin-right: 15px;
+    position: absolute;
+    left: 0;
+    top: 15px;
     font-size: 0.8em;
 }
 
@@ -322,7 +323,7 @@ main a:hover {
 
 .content-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(320px, 100%), 1fr));
     gap: 2rem;
 }
 
@@ -451,4 +452,59 @@ main a:hover {
     margin: 0;
     font-size: 0.85rem;
     color: #666;
+}
+
+/* Research notes retain the author's prose in a readable article layout. */
+.share-article {
+    font-size: 1.05rem;
+    line-height: 1.9;
+    overflow-wrap: break-word;
+}
+
+.share-article header {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.share-article h1 {
+    font-size: clamp(1.6rem, 4vw, 2.2rem);
+    line-height: 1.5;
+    margin: 0.5rem 0 1rem;
+}
+
+.share-kicker, .share-meta {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.share-references {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+    font-size: 0.9rem;
+}
+
+.share-references li {
+    margin-bottom: 1rem;
+    scroll-margin-top: 1rem;
+}
+
+@media (max-width: 760px) {
+    .light-header {
+        flex-direction: column;
+        gap: 10px;
+        padding: 16px 20px;
+        text-align: center;
+    }
+
+    .light-header nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .light-header nav a {
+        padding: 8px 10px;
+    }
 }

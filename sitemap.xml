@@ -20,4 +20,8 @@
     <loc>https://guslab.org/shares.html</loc>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://guslab.org/shares/neural-modularity-blog/content.html</loc>
+    <priority>0.6</priority>
+  </url>
 </urlset>

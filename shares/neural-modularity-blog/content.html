@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shi Gu reflects on how learning demands shape neural network modularity and the ideas behind the lab's latest Nature Machine Intelligence paper.">
+    <meta property="og:title" content="Why Do Neural Networks Become Modular? Reflections on Our Latest Nature Machine Intelligence Paper">
+    <meta property="og:description" content="Shi Gu reflects on how learning demands shape neural network modularity and the ideas behind the lab's latest Nature Machine Intelligence paper.">
+    <meta property="og:image" content="https://guslab.org/assets/avatar.jpg">
+    <meta property="og:url" content="https://guslab.org/shares/neural-modularity-blog/content.html">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="en_US">
+    <meta property="article:published_time" content="2026-10-01T13:12:00+08:00">
+    <meta name="twitter:card" content="summary">
+    <link rel="canonical" href="https://guslab.org/shares/neural-modularity-blog/content.html">
+    <title>Why Do Neural Networks Become Modular? - Shi Gu</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="icon" type="image/png" href="../../assets/icon.png">
+</head>
+<body>
+    <header class="light-header">
+        <div class="lab-name">
+            <a href="../../index.html">Brain and Intelligence Lab</a>
+        </div>
+        <nav aria-label="Main navigation">
+            <a href="../../index.html">About</a>
+            <a href="../../research.html">Research</a>
+            <a href="../../team.html">Team</a>
+            <a href="../../publications.html">Publications</a>
+            <a href="../../shares.html" class="active">Shares</a>
+        </nav>
+    </header>
+
+    <main>
+        <article class="share-article">
+            <header>
+                <p class="share-kicker">Research Notes · Nature Machine Intelligence</p>
+                <h1>Why Do Neural Networks Become Modular?</h1>
+                <p>Reflections on Our Latest <em>Nature Machine Intelligence</em> Paper</p>
+                <p class="share-meta">Shi Gu · <time datetime="2026-10-01">October 1, 2026</time> · <a href="https://zhuanlan.zhihu.com/p/2088262864406688433">Original Chinese note on Zhihu</a></p>
+            </header>
+
+            <p>Years later, when both our research abilities and our interests have changed considerably, we often find ourselves returning to the questions that troubled us when we first entered the field.</p>
+
+            <p>I began working in network neuroscience around 2014. At the time, it was an exciting interdisciplinary field: researchers were eager to develop and test new network measures, relate them to behavioral performance, and use those relationships to explain cognitive mechanisms. Studies had already revealed statistical associations between the modular organization of brain networks, their dynamic reconfiguration, and learning performance.<sup><a href="#ref-1" aria-label="Reference 1">[1]</a></sup></p>
+
+            <p>These findings were exciting, but there was an “elephant in the room” that I could never quite set aside. How much of these seemingly reasonable mechanistic explanations came from an understanding of the actual computations, and how much was a story added to a statistical association? Could some of the associations themselves even be “statistical windfalls,” found after repeatedly trying different measures and analytical paths?</p>
+
+            <p>For me, retrospective explanations of observed network structures in terms of information transmission efficiency, connection costs, or functional specialization could not fully answer the question I cared about most: <strong>Under what conditions is modularity useful, and why does it emerge during learning?</strong></p>
+
+            <p>Later work on artificial neural networks deepened this question. For example, Saining Xie and colleagues showed that connectivity generated from random graphs could also achieve competitive performance on image recognition tasks.<sup><a href="#ref-2" aria-label="Reference 2">[2]</a></sup> This made me even more curious: how do the topological features so often discussed in biological networks relate to specific computational demands and learning processes?</p>
+
+            <p>To answer these questions, we needed more than additional correlations. We needed an experimental platform that would let us systematically vary conditions, track learning, and test hypotheses about mechanisms.</p>
+
+            <p>About three years ago, we began exploring this direction by extending approaches from the study of biological and social networks to artificial neural networks. This offered two immediate advantages. First, we could finally experiment relatively freely: change the tasks, adjust network capacity, intervene on connections, and observe what happened. Second, we could distinguish more clearly between network properties that emerge gradually during training and those already built into the architecture or initialization.</p>
+
+            <p>We pursued two studies along these lines. In our 2024 paper in <em>Science Advances</em>, we used continual familiarity detection to investigate how a task’s information-encoding demands relate to the formation and reconfiguration of network modules, as well as learning performance.<sup><a href="#ref-3" aria-label="Reference 3">[3]</a></sup></p>
+
+            <p>In our latest paper in <em>Nature Machine Intelligence</em>, we asked a further question: when a network has limited representational capacity but needs to learn multiple tasks, how do those demands shape its structure? Our experiments showed that multitask learning can promote modularity, particularly when the task load puts pressure on network capacity. Progressively adding connections during training can further strengthen this modular organization.<sup><a href="#ref-4" aria-label="Reference 4">[4]</a></sup></p>
+
+            <p>For me, the most important connection between these two studies is that they move the question forward: from “What kinds of network structure are associated with better performance?” to “What kinds of learning demands give rise to those structures?”</p>
+
+            <p>We chose relatively simple models so that the key factors could be isolated, controlled, and tested, and we carried out mathematical analyses under explicit assumptions. This line of inquiry is not limited to small models. Recent work has also begun to identify modular organization associated with different cognitive tasks in large language models.<sup><a href="#ref-5" aria-label="Reference 5">[5]</a></sup> This gives us an opportunity to continue investigating the relationship between network organization and intelligence across artificial systems of different scales and with different tasks.</p>
+
+            <p>Of course, cognition involves control as well as representation: which information is routed, which is stored, which is suppressed, and which is ultimately used to guide action. In my view, this is also an aspect of current analogies between LLMs and memory in the brain that deserves closer examination. Understanding what a system “remembers” is not enough to explain how it selects and uses those memories in light of its current goals. These are among the questions we hope to explore next.</p>
+
+            <p>What I wanted to share here is the origin of this research and the thinking that developed along the way. For the specific models, experiments, and results, please see our WeChat article. For me, this paper is also another attempt to address a question from more than a decade ago: to bring network dynamics and network representations together within a model, rather than relying on conjecture and interpretation.</p>
+
+            <p>Finally, I would like to thank Yuhang Wu, Shikuang Deng, Kangrui Du, and the other students for their careful experimental analyses, and all our collaborators for their contributions and support.</p>
+
+            <p>State Key Laboratory of Brain Machine Intelligence on WeChat: <a href="https://mp.weixin.qq.com/s/twFDMqhDRHNDGFPOVHxeHg">Read the paper overview (in Chinese)</a>.</p>
+
+            <section class="share-references" aria-labelledby="references-title">
+                <h2 id="references-title">References</h2>
+                <ol>
+                    <li id="ref-1">Bassett, D. S. et al. Dynamic reconfiguration of human brain networks during learning. Proceedings of the National Academy of Sciences 108, 7641–7646 (2011). <a href="https://www.pnas.org/doi/10.1073/pnas.1018985108">[Link]</a></li>
+                    <li id="ref-2">Xie, S., Kirillov, A., Girshick, R. &amp; He, K. Exploring randomly wired neural networks for image recognition. In Proceedings of the IEEE/CVF International Conference on Computer Vision, 1284–1293 (2019). <a href="https://arxiv.org/abs/1904.01569">[Link]</a></li>
+                    <li id="ref-3">Gu, S., Mattar, M. G., Tang, H. &amp; Pan, G. Emergence and reconfiguration of modular structure for artificial neural networks during continual familiarity detection. Science Advances 10, eadm8430 (2024). <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11277393/">[Link]</a></li>
+                    <li id="ref-4">Wu, Y., Deng, S., Du, K. et al. Task-structured modularity emerges in artificial networks and aligns with brain architecture. Nature Machine Intelligence (2026). DOI: 10.1038/s42256-026-01306-9. <a href="https://www.nature.com/articles/s42256-026-01306-9">[Link]</a></li>
+                    <li id="ref-5">Han, P., Andreas, J., Fedorenko, E. &amp; Gregor de Varda, A. Modular Cognitive Architecture Emerges in Large Language Models. arXiv preprint arXiv:2608.13567 (2026). <a href="https://arxiv.org/abs/2608.13567">[Link]</a></li>
+                </ol>
+            </section>
+        </article>
+        <p><a href="../../shares.html">&larr; Back to all shares</a></p>
+    </main>
+
+    <footer>
+        <p>&copy; <span class="current-year">2026</span> Shi Gu. All rights reserved.</p>
+    </footer>
+
+    <script src="../../script.js"></script>
+</body>
+</html>
