@@ -352,9 +352,8 @@ main a:hover {
     display: block;
 }
 
-.card img.card-image-contain {
-    object-fit: contain;
-    background-color: #020305;
+.card img.card-image-modularity {
+    object-position: 50% 48%;
 }
 
 .card-content {
