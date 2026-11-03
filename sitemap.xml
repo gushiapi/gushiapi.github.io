@@ -17,6 +17,14 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://guslab.org/postdoc.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://guslab.org/postdoc-en.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://guslab.org/shares.html</loc>
     <priority>0.7</priority>
   </url>

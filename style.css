@@ -494,6 +494,22 @@ main a:hover {
     scroll-margin-top: 1rem;
 }
 
+.recruitment-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 1.5rem;
+}
+
+.recruitment a {
+    color: #005a9c;
+    text-decoration: underline;
+    text-underline-offset: 0.18em;
+}
+
+.recruitment h2 {
+    margin-top: 2rem;
+}
+
 @media (max-width: 760px) {
     .light-header {
         flex-direction: column;
